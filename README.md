@@ -87,8 +87,10 @@ Clone this repository to your desired folder:
 
 Example commands:
 ```sh
-  cd my-folder
-  git clone git@github.com:SelmaNdapanda/Enumerable.git
+  git clone git@github.com:KareemWilson/OOP-school-library.git
+```
+```sh
+  cd OOP-school-library
 ```
 
 ### Install
