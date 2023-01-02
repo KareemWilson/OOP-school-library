@@ -7,6 +7,14 @@ class Student < Person
     end
 
     def play_hooky
-        "¯\(ツ)/¯"
+        '¯\(ツ)/¯'
     end
 end
+
+
+# stud = Student.new("pony", 18, true, 15)
+
+# puts stud.play_hooky
+# puts stud.name
+# puts stud.age
+# puts stud.can_use_services?
