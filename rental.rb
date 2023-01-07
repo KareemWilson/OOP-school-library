@@ -3,6 +3,7 @@ require './person'
 
 class Rental
   attr_accessor :date
+  attr_reader :person, :book
 
   def initialize(date, book, person)
     @date = date
@@ -12,9 +13,3 @@ class Rental
     person.rentals << self unless person.rentals.include?(self)
   end
 end
-
-book1 = Book.new('Pirates', 'Maxmilian')
-person1 = Person.new(20, 'kareem')
-Rental.new('15-11-2022', book1, person1)
-
-puts "this is rentals #{book1.rentals}"
