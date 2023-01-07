@@ -48,8 +48,8 @@ class App
       print 'Name: '
       name = gets.chomp
       print 'Has parent permission? [Y/N]'
-      parent_perm = gets.chomp
-      parent_permission = true if (parent_perm = 'Y' || 'y' || 'yes')
+      parent_permission = gets.chomp
+      parent_permission = true if (parent_permission = 'Y' || 'y' || 'yes')
       create_student(name, age, parent_permission)
     when 2
       print 'Name: '
