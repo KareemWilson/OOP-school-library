@@ -22,7 +22,12 @@ class App
     puts '6 - List all Rentals for a given person id'
     puts '7 - Exit'
     option = gets.chomp.to_i
-    move_to_primary(option)
+    if option == 7
+      puts "\nI hope you enjoyed this simple application, Bye bye!"
+      exit
+    else
+      move_to_primary(option)
+    end
   end
 
   def switch_person
@@ -50,9 +55,6 @@ class App
       create_rental
     when 6
       list_all_rentals
-    when 7
-      puts "\nI hope you enjoyed this simple application, Bye bye!"
-      exit
     end
   end
 
